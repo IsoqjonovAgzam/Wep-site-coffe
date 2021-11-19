@@ -1,0 +1,42 @@
+html {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lightCream;
+    font-family: $body;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    color: $darkGreyBlue;
+
+    &.noscroll {
+        overflow: hidden;
+    }
+
+    @include breakpoint-up(xlarge) {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+
+
+h1, h2, h3, h4 {
+    font-family: $heading;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}

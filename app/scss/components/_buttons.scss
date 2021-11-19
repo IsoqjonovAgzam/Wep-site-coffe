@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $darkCyan;
+    border: 0;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: $heading;
+    font-size: 1.125rem;
+    line-height: 1.5rem;                      
+    color: $lightCream;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: $cyan;
+    }   
+
+    &:focus {
+        outline: 0;
+        background-color: $cyan;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+
+}
+
+.button-disabled {
+    border: 0;
+    background-color: $lightTaupe;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: $lightTaupe;
+    }
+}
